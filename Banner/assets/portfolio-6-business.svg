@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fin-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081028"/>
+      <stop offset="50%" stop-color="#0f1f4b"/>
+      <stop offset="100%" stop-color="#050a1a"/>
+    </linearGradient>
+    <linearGradient id="fin-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#fin-bg)"/>
+
+  <!-- Data Grid & Charts on Right -->
+  <g transform="translate(680, 100)">
+    <!-- Glass card mockup -->
+    <rect x="0" y="0" width="440" height="480" rx="24" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+    
+    <text x="40" y="60" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="22">Global Treasury Yield</text>
+    <text x="40" y="90" fill="#64748b" font-family="'Plus Jakarta Sans', Arial" font-weight="600" font-size="13">REAL-TIME MULTI-CURRENCY SETTLEMENT</text>
+
+    <!-- Rising Chart Bars -->
+    <g transform="translate(40, 260)">
+      <rect x="0" y="-40" width="40" height="120" rx="8" fill="rgba(37,99,235,0.3)"/>
+      <rect x="60" y="-80" width="40" height="160" rx="8" fill="rgba(37,99,235,0.5)"/>
+      <rect x="120" y="-120" width="40" height="200" rx="8" fill="rgba(37,99,235,0.7)"/>
+      <rect x="180" y="-70" width="40" height="150" rx="8" fill="rgba(37,99,235,0.5)"/>
+      <rect x="240" y="-160" width="40" height="240" rx="8" fill="url(#fin-blue)"/>
+      <rect x="300" y="-210" width="40" height="290" rx="8" fill="#38bdf8"/>
+    </g>
+
+    <!-- Stat Callout -->
+    <rect x="40" y="380" width="360" height="65" rx="14" fill="rgba(37,99,235,0.15)" stroke="#3b82f6"/>
+    <text x="65" y="420" fill="#60a5fa" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="20">+428.5% YoY</text>
+    <text x="230" y="420" fill="#cbd5e1" font-family="'Plus Jakarta Sans', Arial" font-weight="600" font-size="14">Automated Liquidity</text>
+  </g>
+
+  <!-- Left Copy & Promotion -->
+  <g transform="translate(100, 150)">
+    <rect x="0" y="0" width="220" height="34" rx="17" fill="rgba(37,99,235,0.2)" stroke="#3b82f6"/>
+    <text x="110" y="22" fill="#60a5fa" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="12" text-anchor="middle" letter-spacing="3">ENTERPRISE FINTECH</text>
+
+    <text x="0" y="115" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial" font-weight="900" font-size="62" letter-spacing="-1">SMARTER CASH</text>
+    <text x="0" y="180" fill="url(#fin-blue)" font-family="'Plus Jakarta Sans', Arial" font-weight="900" font-size="62" letter-spacing="-1">FLOW CAPITAL.</text>
+
+    <text x="0" y="240" fill="#94a3b8" font-family="'Plus Jakarta Sans', Arial" font-weight="500" font-size="20">Next-generation cross-border settlement for scaleups.</text>
+
+    <g transform="translate(0, 310)">
+      <rect x="0" y="0" width="230" height="54" rx="27" fill="#ffffff"/>
+      <text x="115" y="34" fill="#081028" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="16" text-anchor="middle">REQUEST DEMO</text>
+    </g>
+  </g>
+</svg>

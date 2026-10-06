@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 534" width="100%" height="100%">
+  <defs>
+    <linearGradient id="after-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="50%" stop-color="#0d1430"/>
+      <stop offset="100%" stop-color="#02040a"/>
+    </linearGradient>
+    <linearGradient id="glow-magenta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="950" height="534" fill="url(#after-bg)"/>
+
+  <!-- High-fashion cyber lines -->
+  <g opacity="0.15" stroke="#38bdf8" stroke-width="1">
+    <circle cx="475" cy="267" r="230"/>
+    <circle cx="475" cy="267" r="160" stroke-dasharray="8,6"/>
+    <line x1="0" y1="267" x2="950" y2="267"/>
+  </g>
+
+  <!-- Dramatic Floating Sneaker Vector Shape with Neon Aura -->
+  <g transform="translate(480, 240) rotate(-18)">
+    <!-- Neon Underglow -->
+    <ellipse cx="60" cy="110" rx="200" ry="25" fill="#ec4899" opacity="0.45" filter="blur(20px)"/>
+    
+    <!-- Sole -->
+    <path d="M -160,80 Q 0,110 240,70 L 220,105 Q 0,135 -150,105 Z" fill="url(#glow-magenta)"/>
+    <!-- Air Bubble -->
+    <rect x="-100" y="86" width="90" height="14" rx="7" fill="#06b6d4" opacity="0.8"/>
+    
+    <!-- Shoe Upper Body -->
+    <path d="M -150,75 Q -100,-40 20,-20 Q 90,-5 160,50 L 220,70 Q 50,85 -150,75 Z" fill="#0f172a" stroke="url(#glow-magenta)" stroke-width="3"/>
+    
+    <!-- Carbon Fiber Accent -->
+    <path d="M -40,-10 L 40,-5 L 20,40 L -60,35 Z" fill="rgba(236,72,153,0.3)"/>
+    <!-- Neon Swoosh Line -->
+    <path d="M -110,60 Q 20,10 130,55" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Agency Typography -->
+  <g transform="translate(70, 90)">
+    <rect x="0" y="0" width="160" height="30" rx="15" fill="rgba(236,72,153,0.2)" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="80" y="20" fill="#f472b6" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="11" text-anchor="middle" letter-spacing="3">LIMITED RELEASE</text>
+
+    <text x="0" y="90" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial" font-weight="900" font-size="52" letter-spacing="-1">VELOCITY 9000</text>
+    <text x="0" y="140" fill="url(#glow-magenta)" font-family="'Plus Jakarta Sans', Arial" font-weight="900" font-size="44" letter-spacing="-1">APEX RUNNER</text>
+
+    <text x="0" y="190" fill="#94a3b8" font-family="'Plus Jakarta Sans', Arial" font-weight="500" font-size="16">Hyper-reactive carbon plate with nitrogen-infused foam.</text>
+
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="200" height="48" rx="24" fill="url(#glow-magenta)"/>
+      <text x="100" y="30" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="14" text-anchor="middle">SHOP DROP // $190</text>
+    </g>
+  </g>
+</svg>

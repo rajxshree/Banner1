@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 534" width="100%" height="100%">
+  <rect width="950" height="534" fill="#e2e8f0"/>
+  
+  <!-- Amateur looking border -->
+  <rect x="15" y="15" width="920" height="504" fill="#ffffff" stroke="#ef4444" stroke-width="8"/>
+
+  <!-- Ugly Starburst -->
+  <polygon points="120,60 145,115 200,95 185,150 240,165 195,200 230,245 170,250 175,310 120,285 85,330 65,275 10,280 35,230 0,185 55,160 30,110 85,110" fill="#facc15" stroke="#dc2626" stroke-width="4"/>
+  <text x="110" y="195" fill="#dc2626" font-family="'Comic Sans MS', Arial, sans-serif" font-weight="900" font-size="22" text-anchor="middle">HUGE SALE!!</text>
+
+  <!-- Mismatched Typography -->
+  <text x="560" y="90" fill="#dc2626" font-family="'Impact', Arial, sans-serif" font-size="60" text-anchor="middle">*** SHOE SALE ***</text>
+  <text x="560" y="150" fill="#1e3a8a" font-family="'Times New Roman', serif" font-weight="bold" font-size="34" text-anchor="middle">UP TO 50% OFF EVERYTHING!!</text>
+  
+  <!-- Very plain shoe clipart -->
+  <g transform="translate(420, 200)">
+    <path d="M 40,80 L 120,80 L 160,110 L 260,110 Q 300,160 260,170 L 40,170 Z" fill="#94a3b8" stroke="#000000" stroke-width="4"/>
+    <rect x="30" y="160" width="240" height="20" fill="#475569"/>
+    <text x="140" y="140" fill="#000000" font-family="Arial" font-size="14" text-anchor="middle">BASIC RUNNER</text>
+  </g>
+
+  <!-- Ugly Text footer -->
+  <rect x="50" y="420" width="850" height="60" fill="#ef4444"/>
+  <text x="475" y="460" fill="#ffffff" font-family="Arial" font-weight="bold" font-size="22" text-anchor="middle">VISIT US TODAY! HURRY WHILE STOCKS LAST! CALL 555-0199</text>
+</svg>

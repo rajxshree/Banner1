@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ai-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060919"/>
+      <stop offset="50%" stop-color="#0e1438"/>
+      <stop offset="100%" stop-color="#050711"/>
+    </linearGradient>
+    <linearGradient id="ai-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#ai-bg)"/>
+
+  <!-- Neural Network Mesh Nodes & Connections -->
+  <g stroke="rgba(129, 140, 248, 0.35)" stroke-width="1.5">
+    <line x1="400" y1="260" x2="260" y2="360"/>
+    <line x1="400" y1="260" x2="540" y2="360"/>
+    <line x1="260" y1="360" x2="220" y2="500"/>
+    <line x1="260" y1="360" x2="400" y2="460"/>
+    <line x1="540" y1="360" x2="400" y2="460"/>
+    <line x1="540" y1="360" x2="580" y2="500"/>
+    <line x1="400" y1="460" x2="310" y2="600"/>
+    <line x1="400" y1="460" x2="490" y2="600"/>
+    <line x1="220" y1="500" x2="310" y2="600"/>
+    <line x1="580" y1="500" x2="490" y2="600"/>
+  </g>
+
+  <!-- Glowing Nodes -->
+  <g fill="#38bdf8">
+    <circle cx="400" cy="260" r="12" fill="#c084fc"/>
+    <circle cx="260" cy="360" r="9"/>
+    <circle cx="540" cy="360" r="9"/>
+    <circle cx="220" cy="500" r="8"/>
+    <circle cx="400" cy="460" r="16" fill="url(#ai-grad)"/>
+    <circle cx="580" cy="500" r="8"/>
+    <circle cx="310" cy="600" r="10"/>
+    <circle cx="490" cy="600" r="10"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="110" fill="#38bdf8" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="14" text-anchor="middle" letter-spacing="6">ANNUAL GLOBAL FORUM</text>
+  <text x="400" y="175" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial" font-weight="900" font-size="64" text-anchor="middle" letter-spacing="-1">PULSE: AI</text>
+  <text x="400" y="225" fill="url(#ai-grad)" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="32" text-anchor="middle" letter-spacing="3">CONVERGENCE 2026</text>
+
+  <!-- Info Cards Bottom -->
+  <g transform="translate(100, 720)">
+    <rect x="0" y="0" width="600" height="120" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+    
+    <text x="40" y="45" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="20">OCT 24 - 26, 2026</text>
+    <text x="40" y="75" fill="#94a3b8" font-family="'Plus Jakarta Sans', Arial" font-weight="500" font-size="14">Moscone Center, San Francisco &amp; Global Livestream</text>
+    
+    <rect x="420" y="32" width="140" height="48" rx="24" fill="url(#ai-grad)"/>
+    <text x="490" y="62" fill="#060919" font-family="'Plus Jakarta Sans', Arial" font-weight="800" font-size="14" text-anchor="middle">REGISTER</text>
+  </g>
+
+  <!-- Keynote speakers footnote -->
+  <text x="400" y="890" fill="#64748b" font-family="'Plus Jakarta Sans', Arial" font-size="13" text-anchor="middle" letter-spacing="1">120+ KEYNOTES • 50 WORKSHOPS • 5,000+ AI RESEARCHERS</text>
+</svg>

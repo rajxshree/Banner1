@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cosmic-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a051b"/>
+      <stop offset="50%" stop-color="#160835"/>
+      <stop offset="100%" stop-color="#070914"/>
+    </linearGradient>
+    <linearGradient id="neon-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-bg">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#cosmic-bg)"/>
+  
+  <!-- Ambient Orbs -->
+  <circle cx="400" cy="450" r="280" fill="url(#sun-glow)" filter="url(#blur-bg)"/>
+  <circle cx="650" cy="200" r="180" fill="#3b82f6" opacity="0.3" filter="url(#blur-bg)"/>
+  <circle cx="150" cy="700" r="200" fill="#ec4899" opacity="0.25" filter="url(#blur-bg)"/>
+
+  <!-- Geometric Grid & Rings -->
+  <g opacity="0.25" stroke="#ffffff" stroke-width="1" fill="none">
+    <circle cx="400" cy="460" r="140" stroke-dasharray="6,6"/>
+    <circle cx="400" cy="460" r="220"/>
+    <circle cx="400" cy="460" r="300" stroke-dasharray="12,8"/>
+    <line x1="100" y1="460" x2="700" y2="460"/>
+    <line x1="400" y1="160" x2="400" y2="760"/>
+  </g>
+
+  <!-- Soundwave Lines -->
+  <g stroke="url(#neon-glow)" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M 200,460 Q 250,380 300,460 T 400,460 T 500,460 T 600,460"/>
+    <path d="M 180,480 Q 230,340 320,480 T 400,480 T 480,480 T 620,480" stroke-width="2" opacity="0.7"/>
+    <path d="M 220,440 Q 300,320 370,440 T 450,440 T 580,440" stroke-width="4"/>
+  </g>
+
+  <!-- Festival Sphere -->
+  <circle cx="400" cy="460" r="95" fill="#070914" stroke="url(#neon-glow)" stroke-width="5"/>
+  <text x="400" y="470" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="28" text-anchor="middle" letter-spacing="4">LIVE 2026</text>
+
+  <!-- Typography Layout -->
+  <text x="70" y="110" fill="#ec4899" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="14" letter-spacing="6">PRESENTS // WORLD TOUR</text>
+  <text x="70" y="170" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="64" letter-spacing="-1">COSMIC</text>
+  <text x="70" y="235" fill="url(#neon-glow)" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="64" letter-spacing="-1">HORIZON</text>
+
+  <!-- Date & Venue -->
+  <text x="730" y="140" fill="#38bdf8" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="20" text-anchor="end">NOV 14-16</text>
+  <text x="730" y="170" fill="#94a3b8" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="600" font-size="14" text-anchor="end">TOKYO DOME ARENA</text>
+
+  <!-- Lineup List -->
+  <g fill="#ffffff" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="700" font-size="16" letter-spacing="2">
+    <text x="400" y="780" text-anchor="middle">TYCHO • ODESZA • RUFUS DU SOL • KASABIAN</text>
+    <text x="400" y="815" text-anchor="middle" fill="#94a3b8" font-size="13">PORTER ROBINSON • DEADMAU5 • REZZ • LANE 8</text>
+  </g>
+
+  <!-- Bottom Details & Barcode -->
+  <rect x="70" y="870" width="660" height="2" fill="rgba(255,255,255,0.15)"/>
+  <text x="70" y="920" fill="#64748b" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="11" letter-spacing="2">TICKETS AVAILABLE AT COSMICFESTIVAL.IO // AGE 18+</text>
+  
+  <!-- Mini Barcode Graphic -->
+  <g transform="translate(620, 890)" fill="#ffffff" opacity="0.7">
+    <rect x="0" y="0" width="3" height="40"/>
+    <rect x="6" y="0" width="1" height="40"/>
+    <rect x="10" y="0" width="5" height="40"/>
+    <rect x="18" y="0" width="2" height="40"/>
+    <rect x="23" y="0" width="4" height="40"/>
+    <rect x="30" y="0" width="2" height="40"/>
+    <rect x="35" y="0" width="6" height="40"/>
+    <rect x="45" y="0" width="2" height="40"/>
+    <rect x="50" y="0" width="3" height="40"/>
+    <rect x="56" y="0" width="5" height="40"/>
+    <rect x="64" y="0" width="2" height="40"/>
+    <rect x="69" y="0" width="4" height="40"/>
+    <rect x="76" y="0" width="1" height="40"/>
+    <rect x="80" y="0" width="4" height="40"/>
+  </g>
+</svg>

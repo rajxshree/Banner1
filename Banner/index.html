@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesignCraft Studio | High-Impact Creative Graphic Design Agency</title>
+  <meta name="description" content="DesignCraft Studio creates high-impact banner designs, poster designs, social media creatives, event posters, and advertisement graphics that get your brand noticed.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- GSAP & ScrollTrigger for High-End Motion -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand-logo" aria-label="DesignCraft Studio Home">
+        <div class="logo-symbol">DC</div>
+        <span class="brand-text">DesignCraft<span class="brand-accent">.</span></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Our Work</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary nav-cta-btn">
+          <span>Get a Design</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#portfolio" class="mobile-nav-link">Our Work</a>
+      <a href="#process" class="mobile-nav-link">Process</a>
+      <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <div>
+      <a href="#contact" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">Start a Project</a>
+      <p style="font-size: 0.8rem; color: #64748b; text-align: center;">© 2026 DesignCraft Studio</p>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Background Ambient Blobs & Particles Canvas -->
+      <div class="hero-bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+      <canvas id="hero-canvas"></canvas>
+
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <div class="badge">
+              <span class="badge-pulse"></span>
+              Creative Design Studio
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            We Design. <br>
+            <span class="text-gradient">You Get Noticed.</span>
+          </h1>
+
+          <p class="hero-desc">
+            Creative banners, posters and digital designs that make your brand stand out. We blend daring typography, high-octane color, and strategic visual hierarchy to turn casual scrollers into loyal customers.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">
+              <span>View Our Designs</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get a Design</span>
+            </a>
+          </div>
+
+          <!-- Hero Mini Stats -->
+          <div class="hero-stats-mini">
+            <div class="stat-mini-item">
+              <span class="stat-mini-num">100+</span>
+              <span class="stat-mini-label">Designs Delivered</span>
+            </div>
+            <div class="stat-mini-item">
+              <span class="stat-mini-num">99.8%</span>
+              <span class="stat-mini-label">Client Approval</span>
+            </div>
+            <div class="stat-mini-item">
+              <span class="stat-mini-num">24-48h</span>
+              <span class="stat-mini-label">Turnaround Time</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Mockups Visuals -->
+        <div class="hero-visuals" id="hero-visuals">
+          <!-- Floating Pill Tags -->
+          <div class="floating-tag tag-1">
+            <span class="tag-dot"></span>
+            <span>Ultra High Res 300DPI</span>
+          </div>
+          <div class="floating-tag tag-2">
+            <span class="tag-dot" style="background: #38bdf8; box-shadow: 0 0 10px #38bdf8;"></span>
+            <span>Vector &amp; Print Ready</span>
+          </div>
+
+          <!-- Mockup 1: Royal Heritage Music & Events Poster -->
+          <div class="floating-mockup mockup-main" data-tilt data-project="0">
+            <div class="mockup-inner">
+              <img src="assets/royal-music-event.jpg" alt="Royal Heritage Music &amp; Events Poster Mockup" loading="eager">
+              <div class="mockup-gloss"></div>
+            </div>
+          </div>
+
+          <!-- Mockup 2: Gaming Hardware Banner -->
+          <div class="floating-mockup mockup-secondary" data-tilt data-project="1">
+            <div class="mockup-inner">
+              <img src="assets/hero-banner-2.svg" alt="Apex Pro Gaming Banner Mockup" loading="eager">
+              <div class="mockup-gloss"></div>
+            </div>
+          </div>
+
+          <!-- Mockup 3: Energy Drink Creative -->
+          <div class="floating-mockup mockup-tertiary" data-tilt data-project="4">
+            <div class="mockup-inner">
+              <img src="assets/hero-social-3.svg" alt="Lumen Energy Ad Mockup" loading="eager">
+              <div class="mockup-gloss"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Wave Divider -->
+    <div class="section-wave">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height: 40px; width: 100%; display: block;">
+        <path d="M0,0 C320,50 640,10 960,40 C1200,60 1360,20 1440,30 L1440,60 L0,60 Z" fill="#0c1124"></path>
+      </svg>
+    </div>
+
+    <!-- ==========================================================================
+         Services Section ("What We Create")
+         ========================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What We Create</span>
+          <h2 class="section-title">Visual Creatives Built To <span class="text-gradient">Dominate Feeds &amp; Streets</span></h2>
+          <p class="section-desc">
+            From high-conversion display banners to jaw-dropping event posters, our crafted artwork transforms ordinary concepts into magnetic brand assets.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Banner Design -->
+          <div class="service-card" data-category="banners">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Banner Design</h3>
+            <p class="service-desc">
+              High-impact web headers, YouTube &amp; Twitch channel art, roll-up display banners, and large-format outdoor billboards crafted for instant brand recall.
+            </p>
+            <div class="service-features">
+              <span class="feature-pill">Web Headers</span>
+              <span class="feature-pill">Roll-up Displays</span>
+              <span class="feature-pill">Outdoor Billboards</span>
+            </div>
+            <a href="#portfolio" class="service-btn filter-trigger" data-filter="banners">
+              <span>View Banner Designs</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 2: Poster Design -->
+          <div class="service-card" data-category="posters">
+            <div class="service-icon-box" style="background: rgba(236,72,153,0.15); border-color: rgba(236,72,153,0.3); color: #f472b6;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Poster Design</h3>
+            <p class="service-desc">
+              Expressive typography posters, minimalist art prints, editorial layout graphics, and retail promotional window posters that demand attention.
+            </p>
+            <div class="service-features">
+              <span class="feature-pill">Typography</span>
+              <span class="feature-pill">Art Prints</span>
+              <span class="feature-pill">Retail Posters</span>
+            </div>
+            <a href="#portfolio" class="service-btn filter-trigger" data-filter="posters">
+              <span>View Poster Designs</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 3: Social Media Creatives -->
+          <div class="service-card" data-category="social">
+            <div class="service-icon-box" style="background: rgba(6,182,212,0.15); border-color: rgba(6,182,212,0.3); color: #38bdf8;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Social Media Creatives</h3>
+            <p class="service-desc">
+              Scroll-stopping Instagram carousels, TikTok &amp; Reel thumbnail covers, LinkedIn thought-leadership templates, and branded feed graphics.
+            </p>
+            <div class="service-features">
+              <span class="feature-pill">Carousels</span>
+              <span class="feature-pill">Story Templates</span>
+              <span class="feature-pill">Feed Grids</span>
+            </div>
+            <a href="#portfolio" class="service-btn filter-trigger" data-filter="social">
+              <span>View Social Creatives</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 4: Event Posters -->
+          <div class="service-card" data-category="events">
+            <div class="service-icon-box" style="background: rgba(249,115,22,0.15); border-color: rgba(249,115,22,0.3); color: #fb923c;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Event Posters</h3>
+            <p class="service-desc">
+              Electrifying music festival flyers, nightclub DJ night artworks, corporate tech summits, esports tournaments, and conference promotional posters.
+            </p>
+            <div class="service-features">
+              <span class="feature-pill">Concerts &amp; EDM</span>
+              <span class="feature-pill">Tech Summits</span>
+              <span class="feature-pill">Esports</span>
+            </div>
+            <a href="#portfolio" class="service-btn filter-trigger" data-filter="events">
+              <span>View Event Posters</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 5: Advertisement Creatives -->
+          <div class="service-card" data-category="business-ads">
+            <div class="service-icon-box" style="background: rgba(34,197,94,0.15); border-color: rgba(34,197,94,0.3); color: #4ade80;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Advertisement Creatives</h3>
+            <p class="service-desc">
+              Conversion-engineered paid ad designs for Meta (Facebook &amp; Instagram), Google Performance Max, Pinterest, and eCommerce sales campaigns with high CTR.
+            </p>
+            <div class="service-features">
+              <span class="feature-pill">Meta Paid Ads</span>
+              <span class="feature-pill">Google Display</span>
+              <span class="feature-pill">High CTR Hooks</span>
+            </div>
+            <a href="#portfolio" class="service-btn filter-trigger" data-filter="business-ads">
+              <span>View Ad Creatives</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 6: Business Promotional Designs -->
+          <div class="service-card" data-category="business-ads">
+            <div class="service-icon-box" style="background: rgba(168,85,247,0.15); border-color: rgba(168,85,247,0.3); color: #c084fc;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Business Promotional Designs</h3>
+            <p class="service-desc">
+              Corporate promotional flyers, product launch decks, brochures, modern brand collateral, and trade show graphics that radiate executive credibility.
+            </p>
+            <div class="service-features">
+              <span class="feature-pill">Flyers &amp; Leaflets</span>
+              <span class="feature-pill">Launch Kits</span>
+              <span class="feature-pill">Pitch Decks</span>
+            </div>
+            <a href="#portfolio" class="service-btn filter-trigger" data-filter="business-ads">
+              <span>View Business Designs</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Portfolio Section ("Designs That Grab Attention")
+         ========================================================================== -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Our Work</span>
+          <h2 class="section-title">Designs That <span class="text-gradient">Grab Attention</span></h2>
+          <p class="section-desc">
+            Explore our curated showcase of live commercial designs crafted for global brands, record labels, tech innovators, and lifestyle startups.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="portfolio-filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="posters">Posters</button>
+          <button class="filter-btn" data-filter="banners">Banners</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+          <button class="filter-btn" data-filter="business-ads">Business Ads</button>
+        </div>
+
+        <!-- Portfolio Items Grid -->
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Card 1: Royal Sangeet & Music Gala (Music & Events) -->
+          <div class="portfolio-card" data-category="posters events" data-index="0">
+            <div class="portfolio-thumb">
+              <img src="assets/royal-music-event.jpg" alt="Royal Sangeet &amp; Music Gala Event Poster" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-top-tag">Music &amp; Events</span>
+                <div class="portfolio-info">
+                  <h4 class="portfolio-item-title">Royal Sangeet &amp; Music Gala</h4>
+                  <p class="portfolio-item-desc">Grand palace musical night &amp; royal cultural event visual identity.</p>
+                  <span class="view-project-link">
+                    <span>View Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Gaming Hardware Banner (Wide Banner Format) -->
+          <div class="portfolio-card banner-format" data-category="banners business-ads" data-index="1">
+            <div class="portfolio-thumb">
+              <img src="assets/portfolio-2-banner.svg" alt="Apex Pro Gaming Hardware Launch Banner" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-top-tag">Hardware Banner</span>
+                <div class="portfolio-info">
+                  <h4 class="portfolio-item-title">Apex Pro X Wireless Audio</h4>
+                  <p class="portfolio-item-desc">High-tech eSports display banner &amp; global campaign hero creative.</p>
+                  <span class="view-project-link">
+                    <span>View Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Matcha Artisan -->
+          <div class="portfolio-card" data-category="social" data-index="2">
+            <div class="portfolio-thumb">
+              <img src="assets/portfolio-3-social.svg" alt="Origin Matcha Social Media Creative" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-top-tag">Social Media</span>
+                <div class="portfolio-info">
+                  <h4 class="portfolio-item-title">Origin Ceremonial Matcha</h4>
+                  <p class="portfolio-item-desc">Minimalist Japanese luxury aesthetic carousel &amp; feed ad.</p>
+                  <span class="view-project-link">
+                    <span>View Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Global AI Summit -->
+          <div class="portfolio-card" data-category="events posters" data-index="3">
+            <div class="portfolio-thumb">
+              <img src="assets/portfolio-4-event.svg" alt="Pulse AI Convergence 2026 Summit Poster" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-top-tag">Tech Summit</span>
+                <div class="portfolio-info">
+                  <h4 class="portfolio-item-title">Pulse: AI Convergence</h4>
+                  <p class="portfolio-item-desc">Futuristic neural network conference branding &amp; promotional poster.</p>
+                  <span class="view-project-link">
+                    <span>View Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Lumen Energy Drink Ad -->
+          <div class="portfolio-card" data-category="business-ads social" data-index="4">
+            <div class="portfolio-thumb">
+              <img src="assets/portfolio-5-ad.svg" alt="Lumen Energy Drink High-CTR Ad Creative" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-top-tag">Direct Response Ad</span>
+                <div class="portfolio-info">
+                  <h4 class="portfolio-item-title">Lumen Volt Energy</h4>
+                  <p class="portfolio-item-desc">High-voltage 200mg caffeine launch creative engineered for Meta ads.</p>
+                  <span class="view-project-link">
+                    <span>View Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Fintech Enterprise Banner (Wide Format) -->
+          <div class="portfolio-card banner-format" data-category="banners business-ads" data-index="5">
+            <div class="portfolio-thumb">
+              <img src="assets/portfolio-6-business.svg" alt="Fintech Horizon Corporate Promotional Creative" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-top-tag">Corporate Promotional</span>
+                <div class="portfolio-info">
+                  <h4 class="portfolio-item-title">Fintech Horizon Liquidity</h4>
+                  <p class="portfolio-item-desc">B2B SaaS global treasury launch banner &amp; executive investor visual.</p>
+                  <span class="view-project-link">
+                    <span>View Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Before / After Transformation Section
+         ========================================================================== -->
+    <section class="before-after-section" id="comparison">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">The Transformation</span>
+          <h2 class="section-title">Basic Design <span class="text-gradient">→ Premium Design</span></h2>
+          <p class="section-desc">
+            See the undeniable difference professional art direction makes. Drag the interactive slider to compare a generic DIY flyer with our studio-grade commercial design.
+          </p>
+        </div>
+
+        <div class="ba-wrapper">
+          <div class="ba-slider-container" id="ba-slider">
+            <!-- Badges -->
+            <span class="ba-badge ba-badge-before">Basic DIY Design</span>
+            <span class="ba-badge ba-badge-after">DesignCraft Premium</span>
+
+            <!-- Before Image Layer (Underneath) -->
+            <div class="ba-image ba-before" style="background-image: url('assets/before-design.svg');"></div>
+
+            <!-- After Image Layer (Clipped on top) -->
+            <div class="ba-image ba-after" id="ba-after-layer">
+              <div class="ba-after-content" style="background-image: url('assets/after-design.svg'); background-size: cover; background-position: center;"></div>
+            </div>
+
+            <!-- Draggable Handle -->
+            <div class="ba-handle" id="ba-handle">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-button" aria-label="Drag slider to compare before and after">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                  <polyline points="9 18 3 12 9 6" transform="translate(12, 0) scale(-1, 1)"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="ba-caption-box">
+            <div class="ba-caption-text">
+              <h4>Amateur Clipart vs. Studio Commercial Artwork</h4>
+              <p>We replace clutter and clipart with 3D depth, cinematic glow, targeted hierarchy, and brand-first visual storytelling.</p>
+            </div>
+            <a href="#contact" class="btn btn-primary" style="padding: 0.75rem 1.6rem; font-size: 0.88rem; flex-shrink: 0;">Upgrade Your Brand</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Why Choose Us Section ("More Than Just a Design")
+         ========================================================================== -->
+    <section class="why-us-section" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Why Choose Us</span>
+          <h2 class="section-title">More Than <span class="text-gradient">Just a Design</span></h2>
+          <p class="section-desc">
+            We don't just assemble graphics; we engineer compelling visual communication that drives clicks, commands authority, and grows revenue.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Benefit 1 -->
+          <div class="why-card">
+            <div class="why-card-glow"></div>
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Creative &amp; Original Designs</h3>
+            <p class="why-card-desc">
+              Zero cookie-cutter templates. Every project begins with a blank canvas tailored strictly to your campaign goals and audience psychology.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="why-card">
+            <div class="why-card-glow"></div>
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Fast Delivery</h3>
+            <p class="why-card-desc">
+              Tight marketing deadlines? Initial creative concepts delivered within 24 to 48 hours without ever compromising on pixel precision.
+            </p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="why-card">
+            <div class="why-card-glow"></div>
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Brand-Focused Designs</h3>
+            <p class="why-card-desc">
+              Harmonious typography systems, color theory, and tone alignment that elevate your brand and build trust at first glance.
+            </p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="why-card">
+            <div class="why-card-glow"></div>
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Designs That Get Attention</h3>
+            <p class="why-card-desc">
+              Intentional focal points, high contrast ratios, and kinetic visual flow designed to win the brutal war for audience attention.
+            </p>
+          </div>
+        </div>
+
+        <!-- Animated Counter Banner -->
+        <div class="stats-banner" id="stats-banner">
+          <div class="counter-item">
+            <div class="counter-num" data-target="100" data-suffix="+">0+</div>
+            <div class="counter-label">Designs Created</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-num" data-target="50" data-suffix="+">0+</div>
+            <div class="counter-label">Happy Clients</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-num" data-target="24" data-suffix="/7">0/7</div>
+            <div class="counter-label">Quick Response</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-num" data-target="100" data-suffix="%">0%</div>
+            <div class="counter-label">Creative Approach</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Process Section ("From Idea to Final Design")
+         ========================================================================== -->
+    <section class="process-section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">How We Work</span>
+          <h2 class="section-title">From Idea to <span class="text-gradient">Final Design</span></h2>
+          <p class="section-desc">
+            A frictionless, transparent 5-step workflow designed to take your rough idea and craft it into a show-stopping design effortlessly.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-line"></div>
+
+          <!-- Step 01 -->
+          <div class="process-step">
+            <div class="step-node">01</div>
+            <h3 class="step-title">Tell Us Your Requirement</h3>
+            <p class="step-desc">Share your brief, dimensions, brand colors, and reference designs via our simple form or WhatsApp.</p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="process-step">
+            <div class="step-node">02</div>
+            <h3 class="step-title">We Create the Concept</h3>
+            <p class="step-desc">Our lead artists brainstorm mood boards and design high-fidelity visual concepts for your review.</p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="process-step">
+            <div class="step-node">03</div>
+            <h3 class="step-title">You Review the Design</h3>
+            <p class="step-desc">Explore your designs presented in realistic 3D mockups so you know exactly how it will look live.</p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="process-step">
+            <div class="step-node">04</div>
+            <h3 class="step-title">We Make Revisions</h3>
+            <p class="step-desc">We fine-tune typography, color accents, or layout elements until you are 100% enthusiastic.</p>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="process-step">
+            <div class="step-node">05</div>
+            <h3 class="step-title">Final Design Delivered</h3>
+            <p class="step-desc">Receive print-ready CMYK/RGB files, editable sources (PSD/AI), and optimized web graphics instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Testimonial Section
+         ========================================================================== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Client Feedback</span>
+          <h2 class="section-title">Loved By Brands &amp; <span class="text-gradient">Event Creators</span></h2>
+          <p class="section-desc">
+            Read what entrepreneurs, event organizers, and founders say about collaborating with DesignCraft Studio.
+          </p>
+        </div>
+
+        <div class="testimonial-carousel" id="testimonial-carousel">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-quote">
+                "DesignCraft produced our EDM festival poster within 48 hours. Ticket sales spiked immediately when we dropped the artwork on Instagram. Unmatched creative quality!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="assets/avatar-1.svg" alt="Sarah Jenkins">
+              </div>
+              <div class="author-info">
+                <h5>Sarah Jenkins</h5>
+                <span>Director, Pulse Music Fest</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-quote">
+                "Our Meta ad ROAS doubled after swapping generic product mockups with DesignCraft's custom ad creatives. The 3D neon aesthetic gave us an instant premium identity."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="assets/avatar-2.svg" alt="David Vance">
+              </div>
+              <div class="author-info">
+                <h5>David Vance</h5>
+                <span>Founder, Apex Audio Gear</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-quote">
+                "Finding designers who understand subtle luxury minimalism is rare. Their work on our ceremonial matcha packaging and social carousels was pristine. Highly recommended!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="assets/avatar-3.svg" alt="Elena Rostova">
+              </div>
+              <div class="author-info">
+                <h5>Elena Rostova</h5>
+                <span>Head of Brand, Origin Kyoto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-btn" id="carousel-next" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Call To Action Banner
+         ========================================================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <!-- Floating Mockups in CTA Background -->
+          <div class="cta-mockup cta-mockup-1">
+            <img src="assets/royal-music-event.jpg" alt="Royal Music &amp; Events Poster Mockup">
+          </div>
+          <div class="cta-mockup cta-mockup-2">
+            <img src="assets/portfolio-3-social.svg" alt="Social Mockup">
+          </div>
+
+          <h2 class="cta-title">Have a Design Idea?</h2>
+          <p class="cta-desc">
+            Let's turn your idea into a design people notice. Get custom banners, event posters, or advertising graphics delivered fast.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <span>Start Your Project</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="https://wa.me/916385151563?text=Hi%20DesignCraft%20Studio!%20I'd%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.585 1.761.88 2.796.88 3.183 0 5.77-2.587 5.77-5.767.001-3.181-2.587-5.766-5.77-5.766zm9.969 5.766c0 5.485-4.464 9.949-9.969 9.949-1.685 0-3.32-.423-4.789-1.229l-5.242 1.373 1.399-5.109c-.896-1.528-1.368-3.279-1.368-5.074 0-5.485 4.464-9.949 9.969-9.949 5.505 0 9.969 4.464 9.969 9.949z"></path>
+              </svg>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <!-- Contact Information Column -->
+        <div class="contact-info-col">
+          <span class="section-subtitle">Get In Touch</span>
+          <h3>Let's Create Something <span class="text-gradient">Iconic</span></h3>
+          <p>
+            Whether you need a full ad campaign, an event poster, or website banners, we are ready to bring your vision to life. Fill in the form or reach out directly via your favorite channel.
+          </p>
+
+          <div class="contact-channels">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/916385151563?text=Hi%20DesignCraft%20Studio!%20I'd%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.585 1.761.88 2.796.88 3.183 0 5.77-2.587 5.77-5.767.001-3.181-2.587-5.766-5.77-5.766zm9.969 5.766c0 5.485-4.464 9.949-9.969 9.949-1.685 0-3.32-.423-4.789-1.229l-5.242 1.373 1.399-5.109c-.896-1.528-1.368-3.279-1.368-5.074 0-5.485 4.464-9.949 9.969-9.949 5.505 0 9.969 4.464 9.969 9.949z"></path>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <h6>Chat Instant on WhatsApp</h6>
+                <span>+91 63851 51563</span>
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <h6>Follow Our Process</h6>
+                <span>@designcraft.studio</span>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:hello@designcraftstudio.com" class="contact-channel-item">
+              <div class="channel-icon email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <h6>Send Project Brief</h6>
+                <span>hello@designcraftstudio.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="contact-form-box">
+          <form id="project-form" class="form-grid">
+            <div class="form-group">
+              <label for="user-name">Your Full Name *</label>
+              <input type="text" id="user-name" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="business-name">Business / Brand Name *</label>
+              <input type="text" id="business-name" placeholder="e.g. Lumen Energy Co." required>
+            </div>
+
+            <div class="form-group">
+              <label for="whatsapp-number">WhatsApp Number *</label>
+              <input type="tel" id="whatsapp-number" placeholder="+91 63851 51563" required>
+            </div>
+
+            <div class="form-group">
+              <label for="design-type">Design Type *</label>
+              <select id="design-type" required>
+                <option value="" disabled selected>Select Design Type</option>
+                <option value="Banner Design">Banner Design (Web, Display, Billboard)</option>
+                <option value="Poster Design">Poster Design (Art, Typography, Retail)</option>
+                <option value="Social Media Creatives">Social Media Creatives (Carousels, Ads)</option>
+                <option value="Event Posters">Event Posters (Festivals, Summits, DJ)</option>
+                <option value="Advertisement Creatives">Advertisement Creatives (Meta, Google)</option>
+                <option value="Business Promotional Designs">Business Promotional Designs</option>
+                <option value="Custom Complete Package">Custom Full Package</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="project-details">Project Requirements &amp; Vision *</label>
+              <textarea id="project-details" placeholder="Describe your design objective, dimensions, preferred colors, deadline, and target audience..." required></textarea>
+            </div>
+
+            <!-- Upload Reference Dropzone -->
+            <div class="form-group full-width">
+              <label>Upload Reference / Logo File (Optional)</label>
+              <div class="upload-dropzone" id="upload-dropzone">
+                <input type="file" id="reference-file" style="display: none;" accept="image/*,.pdf,.ai,.psd">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span id="upload-label">Drag &amp; drop reference files or <strong>browse computer</strong></span>
+                <span class="file-name-preview" id="file-name-preview"></span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <span>Submit Request</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="DesignCraft Studio Home">
+            <div class="logo-symbol">DC</div>
+            <span class="brand-text">DesignCraft<span class="brand-accent">.</span></span>
+          </a>
+          <p>Creative designs that make your brand impossible to ignore. Banners, posters, and digital creatives crafted to stand out.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#portfolio" class="filter-trigger" data-filter="banners">Banner Design</a></li>
+            <li><a href="#portfolio" class="filter-trigger" data-filter="posters">Poster Design</a></li>
+            <li><a href="#portfolio" class="filter-trigger" data-filter="social">Social Media Creatives</a></li>
+            <li><a href="#portfolio" class="filter-trigger" data-filter="events">Event Posters</a></li>
+            <li><a href="#portfolio" class="filter-trigger" data-filter="business-ads">Advertisement Creatives</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="https://wa.me/916385151563" target="_blank" rel="noopener noreferrer">WhatsApp Direct</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="mailto:hello@designcraftstudio.com">hello@designcraftstudio.com</a></li>
+            <li><a href="#contact">Get a Custom Quote</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 DesignCraft Studio. All Rights Reserved.</p>
+        <p>Engineered for high visual impact and brand growth.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Floating WhatsApp Button
+       ========================================================================== -->
+  <a href="https://wa.me/916385151563?text=Hi%20DesignCraft%20Studio!%20I'd%20like%20to%20discuss%20a%20creative%20design%20project." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <div class="floating-whatsapp-tooltip">Chat with us on WhatsApp</div>
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.585 1.761.88 2.796.88 3.183 0 5.77-2.587 5.77-5.767.001-3.181-2.587-5.766-5.77-5.766zm9.969 5.766c0 5.485-4.464 9.949-9.969 9.949-1.685 0-3.32-.423-4.789-1.229l-5.242 1.373 1.399-5.109c-.896-1.528-1.368-3.279-1.368-5.074 0-5.485 4.464-9.949 9.969-9.949 5.505 0 9.969 4.464 9.969 9.949z"></path>
+    </svg>
+  </a>
+
+  <!-- ==========================================================================
+       Fullscreen Project Preview Modal
+       ========================================================================== -->
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-content-wrap">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project preview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-media-col">
+        <img id="modal-image" src="" alt="Project Preview">
+      </div>
+
+      <div class="modal-info-col">
+        <div>
+          <span class="modal-tag" id="modal-category">Category</span>
+          <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+          <p class="modal-desc" id="modal-description">Project Description</p>
+
+          <div class="modal-specs">
+            <div class="spec-row">
+              <span class="spec-label">Format / Dimensions</span>
+              <span class="spec-val" id="modal-dimensions">Print 300 DPI / Web Vector</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Deliverables</span>
+              <span class="spec-val" id="modal-deliverables">AI, PSD, SVG, PNG, PDF</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Turnaround</span>
+              <span class="spec-val" id="modal-turnaround">48 Hours</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary" id="modal-order-btn" style="width: 100%;">
+          <span>Request Similar Design</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast-notice">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Thank you! Your design request has been received.</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
